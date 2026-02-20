@@ -2,6 +2,8 @@
 
 A collection of Bevy-based voxel terrain projects demonstrating the Transvoxel algorithm for seamless Level-of-Detail (LOD) transitions.
 
+![Screenshot](screenshots/screen1.png)
+
 ## Projects
 
 ### [BevyBlocks](bevyblocks/README.md)
@@ -16,7 +18,7 @@ A real-time voxel terrain demo that renders a procedurally-generated planet usin
 
 ### [PlumeSplat](plumesplat/README.md)
 
-A shader library for multi-material terrain splatting with triplanar projection and height-based blending.
+A shader library for multi-material terrain splatting with triplanar projection and height-based blending. Based on the original [PlumeSplat](https://github.com/DrewRidley/plumesplat/) by Drew Ridley.
 
 ---
 
@@ -54,3 +56,14 @@ cargo run --release
 - [Bevy 0.18](https://bevyengine.org/) – Game engine
 - [transvoxel](https://crates.io/crates/transvoxel) – Transvoxel algorithm implementation
 - [fastnoise-lite](https://crates.io/crates/fastnoise-lite) – Noise generation
+
+---
+
+## License
+
+Licensed under either of
+
+- [Apache License, Version 2.0](LICENSE-APACHE)
+- [MIT License](LICENSE-MIT)
+
+at your option.
