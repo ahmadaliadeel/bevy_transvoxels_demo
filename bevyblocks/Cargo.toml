@@ -1,0 +1,17 @@
+[package]
+name = "bevyblocks"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy = { version = "0.18", default-features = true, features = [
+    "bevy_asset",
+    "bevy_render",
+    "bevy_pbr",
+    "bevy_core_pipeline",
+    "png",
+] }
+transvoxel = "2.0.0"
+flagset = "0.4"
+fastnoise-lite = "1.1"
+plumesplat = {path="../plumesplat", features=["height_blending"]}

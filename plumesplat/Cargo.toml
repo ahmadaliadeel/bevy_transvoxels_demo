@@ -1,0 +1,36 @@
+[package]
+name = "plumesplat"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+description = "Advanced terrain splatting for Bevy with support for 256+ materials using texture arrays"
+repository = "https://github.com/drewridley/plumesplat"
+keywords = ["bevy", "gamedev", "terrain", "splatting", "graphics"]
+categories = ["game-development", "graphics", "rendering"]
+
+[features]
+default = []
+# Enable height-based blending for more realistic material transitions
+height_blending = []
+
+[dependencies]
+bevy = { version = "0.18", default-features = false, features = [
+    "bevy_asset",
+    "bevy_render",
+    "bevy_pbr",
+    "bevy_core_pipeline",
+    "png",
+] }
+image = { version = "0.25", optional = true }
+
+[dev-dependencies]
+bevy = { version = "0.18", features = ["bevy_winit", "x11"] }
+
+[[example]]
+name = "basic"
+path = "examples/basic.rs"
+
+[[bin]]
+name = "combine_textures"
+path = "tools/combine_textures.rs"
+required-features = ["image"]
